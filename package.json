@@ -1,0 +1,41 @@
+{
+  "name": "generator-glu",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "adnanh/generator-glu",
+  "author": {
+    "name": "Adnan Hajdarević",
+    "email": "",
+    "url": "https://github.com/adnanh"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app",
+    "component",
+    "store",
+    "reactcomponent",
+    "page",
+    "view",
+    "viewcontroller",
+    "actions",
+    "actioncreator",
+    "api",
+    "reactview"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "change-case": "^2.3.0",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}

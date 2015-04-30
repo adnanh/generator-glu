@@ -1,0 +1,11 @@
+{
+    "options": {
+        "projectName": "<%= projectName %>"
+    },
+    "development": {
+        "example": "dev"
+    },
+    "production": {
+        "example": "prod"
+    }
+}
