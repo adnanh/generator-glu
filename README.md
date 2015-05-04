@@ -35,7 +35,7 @@ yo glu
 ```
 
 ### Subgenerators
-*Note:* If you didn't use `yo glu` command, you have to place the `.yo-rc.json` file with the following content
+*Note:* If you didn't use `yo glu` command to bootstrap your project, you have to place the `.yo-rc.json` file with the following content
 ```json
 {
     "generator-glu": {}
