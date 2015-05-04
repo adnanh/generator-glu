@@ -1,5 +1,4 @@
-# generator-glu [![Build Status](https://secure.travis-ci.org/adnanh/generator-glu.png?branch=master)](https://travis-ci.org/adnanh/generator-glu)
-
+# generator-glu
 > [Yeoman](http://yeoman.io) generator
 
 
@@ -29,18 +28,128 @@ To install generator-glu from npm, run:
 npm install -g generator-glu
 ```
 
-Finally, initiate the generator:
-
+### App generator
+This command will bootstrap the current directory for GLU project...
 ```bash
 yo glu
 ```
 
-### Getting To Know Yeoman
+### Subgenerators
+*Note:* If you didn't use `yo glu` command, you have to place the `.yo-rc.json` file with the following content
+```json
+{
+    "generator-glu": {}
+}
+```
+in the project root directory, in order for subgenerators to work properly.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+#### Action
+```bash
+yo glu:action name
+```
 
+Executing the command will create the following files:
+```
+   create src/actions/NameActions.js
+   create src/actions/NameActionCreator.js
+```
+
+#### Api
+```bash
+yo glu:api name
+```
+
+Executing the command will create the following files:
+```
+   create src/apis/NameApi.js
+```
+
+#### Component
+```bash
+yo glu:component name
+```
+
+Executing the command will create the following files:
+```
+   create src/components/name/NameView.js
+   create src/components/name/NameViewController.js
+   create src/components/name/NameViewEvents.js
+```
+
+#### Component with React view (React Component) 
+```bash
+yo glu:reactcomponent name
+```
+
+Executing the command will create the following files:
+```
+   create src/components/name/NameView.js
+   create src/components/name/NameViewController.js
+   create src/components/name/NameViewEvents.js
+   create src/components/name/NameViewReact.js
+```
+
+#### Page
+```bash
+yo glu:page name
+```
+
+Executing the command will create the following files:
+```
+   create src/pages/name/NameView.js
+   create src/pages/name/NameViewController.js
+```
+
+#### Store
+```bash
+yo glu:store name
+```
+
+Executing the command will create the following files:
+```
+   create src/stores/NameStore.js
+```
+
+#### View
+```bash
+yo glu:view name
+```
+
+Executing the command will create the following files:
+```
+   create NameView.js
+```
+
+#### React view
+```bash
+yo glu:reactview name
+```
+
+Executing the command will create the following files:
+```
+   create NameViewReact.js
+```
+
+#### View controller
+```bash
+yo glu:viewcontroller name
+```
+
+Executing the command will create the following files:
+```
+   create NameViewController.js
+```
+
+#### View events
+```bash
+yo glu:viewevents name
+```
+
+Executing the command will create the following files:
+```
+   create NameViewEvents.js
+```
 
 ## License
 
