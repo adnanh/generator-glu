@@ -11,8 +11,8 @@ class <%= pageName %>View extends GLU.View {
             // invoke sub glu view render methods here
         };
         React.render(
-        <div>
-        </div>, this.el, onDoneRendering);
+            <div>
+            </div>, this.el, onDoneRendering);
     }
 
     destroy() {
