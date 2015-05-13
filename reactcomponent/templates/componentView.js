@@ -17,6 +17,7 @@ class <%= name %>View extends GLU.View {
     }
 
     destroy() {
+        React.unmountComponentAtNode(this.el);
     }
 }
 export default <%= name %>View;
