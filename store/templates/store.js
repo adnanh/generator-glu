@@ -1,4 +1,5 @@
 import GLU from 'glu.js';
+// import <%= storeName %>Actions from '/actions/<%= storeName %>Actions';
 
 class <%= storeName %>Store extends GLU.Store {
     constructor() {
