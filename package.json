@@ -21,8 +21,7 @@
     "page",
     "view",
     "viewcontroller",
-    "actions",
-    "actioncreator",
+    "action",
     "api",
     "reactview"
   ],

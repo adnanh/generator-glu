@@ -1,6 +1,7 @@
 import GLU from 'glu.js';
+// import <%= storeName %>Actions from '/actions/<%= storeName %>Actions';
 
-class <%= storeName %> extends GLU.Store {
+class <%= storeName %>Store extends GLU.Store {
     constructor() {
         super();
 
@@ -8,8 +9,8 @@ class <%= storeName %> extends GLU.Store {
         // listen for actions
 
         this.bindActions(
-            ExampleActions.ACTION, this.actionHandler, [],
-            ExampleActions.ACTION_2, this.actionTwoHandler, []
+            <%= storeName %>Actions.ACTION, this.actionHandler, [],
+            <%= storeName %>Actions.ACTION_2, this.actionTwoHandler, []
         );
         */
     }
@@ -26,4 +27,4 @@ class <%= storeName %> extends GLU.Store {
     */
 }
 
-export default new <%= storeName %>();
+export default new <%= storeName %>Store();
